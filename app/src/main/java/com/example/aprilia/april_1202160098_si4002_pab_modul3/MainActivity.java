@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, gridColumnCount));
 
         daftarUser = new ArrayList<>();
-        //melakukan pengecekan adpakah ada data pada array
+        //melakukan pengecekan apakah ada data pada array
         if (savedInstanceState!=null){
             daftarUser.clear();
             for (int i=0; i<savedInstanceState.getStringArrayList("nama").size();i++){
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //simpan pada bagian outstate
         outState.putStringArrayList("nama",tempListNama);
-        outState.putStringArrayList("pekerjaan",tempListPekerjaan);
+        outState.putStringArrayList("job",tempListPekerjaan);
         outState.putIntegerArrayList("gender",tempListGender);
         super.onSaveInstanceState(outState);
 

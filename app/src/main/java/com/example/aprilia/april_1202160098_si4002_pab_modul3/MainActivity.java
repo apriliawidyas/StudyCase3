@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         //grid ini buat column nya yang ditampilin atau gridnya biar bisa lanscape atau portrait muncul berapa tampilan cek integer
         int gridColumnCount = getResources().getInteger(R.integer.grid_column);
-//        int gridColumnCount = 1;
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, gridColumnCount));
 
         daftarUser = new ArrayList<>();
